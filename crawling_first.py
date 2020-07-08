@@ -14,10 +14,10 @@ html = requests.get(url)
 # print(html.text)
 
 # 크롤링한 자료 파싱
-# .text : "하위 자식 태그"에 텍스트까지 문자열로 파싱 가능 (유니코드 형식) / .string : "only 해당 태그" 하위 문자열 객체화 (문자열 없으면 None 반환)
+# .text : "하위 자식 태그" 텍스트까지 문자열로 파싱 가능(유니코드 형식) / .string : "only 해당 태그" 하위 문자열 객체화(문자열 없으면 None 반환)
 soup = BeautifulSoup(html.text, 'html.parser')
 
-# "살아있다" 영화 제목만 뽑아오기 (크롬 개발자도구로 해당 부분의 CSS Selecter 복사)
+# "살아있다" 영화 제목만 뽑아오기(크롬 개발자도구로 해당 부분의 CSS Selecter 복사)
 # print(soup.select_one('body > div > div.sect-showtimes > ul > li:nth-child(1) > div > div.info-movie > a > strong'))
 
 # 영화 정보 전체 가져오기 (info-movie : Class)
