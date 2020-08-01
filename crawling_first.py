@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 # Crawling : 데이터 수집하고 분류하는 것(그냥 탐색) / Scraping : 원하는 정보를 추출하는 기술(긁어오기)
 # Parsing : 데이터를 정보로 가공
 
-# 김해 cgv 상영시간표 페이지 크롤링
+# 김해 cgv 상영시간표 페이지 스크
 # Date Query String 수정해서 날짜 지정 가능
 url = 'http://www.cgv.co.kr//common/showtimes/iframeTheater.aspx?areacode=05,204&theatercode=0028&date=20200707'
 html = requests.get(url)
