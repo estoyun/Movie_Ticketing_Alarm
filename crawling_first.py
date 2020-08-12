@@ -1,4 +1,4 @@
-# Requests, bs4 module for crawling
+# Requests, bs4 module for scraping
 import requests
 from bs4 import BeautifulSoup
 
