@@ -26,7 +26,7 @@ soup = BeautifulSoup(html.text, 'html.parser')
 # 영화 정보 전체를 리스트 형태로 저장 (div class="info-movie" 기준)
 title_list = soup.select('div.info-movie')
 
-# 태그 selecting 순서 : div class > a > strong > 영화 제목
+# 태그 Selecting 순서 : div class > a > strong > 영화 제목
 # strip() : 양쪽 공백 제거 / rstrip() : 오른쪽 공백 제거 / lstrip() : 왼쪽 공백 제거
 for i in title_list:
     print(i.select_one('a > strong').text.strip())
