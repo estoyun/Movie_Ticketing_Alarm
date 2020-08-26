@@ -2,7 +2,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-# Crawling : 데이터 수집하고 분류하는 것(그냥 탐색) / Scraping : 원하는 정보를 추출하는 기술(긁어오기)
+# Crawling : 데이터 수집하고 분류하는 것(그냥 탐색)
+# Scraping : 원하는 정보를 추출하는 기술(긁어오기)
 # Parsing : 데이터를 정보로 가공
 
 # 김해 CGV 상영시간표 페이지 스크래핑
